@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'amazon-ember';
+    src: URL('Amazon-Ember-Medium.ttf') format('truetype');
+}
+
+html, body {
+    background-color: #181a1b;
+}
+
+button {
+    margin: 10px;
+}
+
+#title {
+    color: white;
+    font-size: calc(2vw + 2vh);
+    text-align: center;
+    font-family: 'amazon-ember';
+    opacity: 0;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadein {
+    animation: fadein 2s ease;
+}
+
+#volumeicon {
+    position: absolute;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #75e6b2;
+    left: calc(50vw - 10vmin);
+    top: calc(50vh - 10vmin);
+}
